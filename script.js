@@ -9,7 +9,8 @@ const profileForm = document.getElementById("profile-form");
 profileForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const newName = document.getElementById("frist-name").value + " " + document.getElementById("last-name").value;
+    const newName = document.getElementById("first-name").value + " " + document.getElementById("last-name").value;
     const newLocation = document.getElementById("location").value
+    console.log(newLocation,newName)
     updateProfileName(newName,newLocation);
 });
